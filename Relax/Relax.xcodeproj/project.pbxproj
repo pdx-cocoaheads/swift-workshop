@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9488E66A1A86635400F0E383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488E6691A86635400F0E383 /* AppDelegate.swift */; };
-		9488E66C1A86635400F0E383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488E66B1A86635400F0E383 /* ViewController.swift */; };
-		9488E66F1A86635400F0E383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9488E66D1A86635400F0E383 /* Main.storyboard */; };
+		9488E66C1A86635400F0E383 /* RelaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488E66B1A86635400F0E383 /* RelaxViewController.swift */; };
 		9488E6711A86635400F0E383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9488E6701A86635400F0E383 /* Images.xcassets */; };
 		9488E6741A86635400F0E383 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9488E6721A86635400F0E383 /* LaunchScreen.xib */; };
 		9488E6801A86635400F0E383 /* RelaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488E67F1A86635400F0E383 /* RelaxTests.swift */; };
+		94F839DD1A8699AF003DF242 /* MainUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F839DC1A8699AF003DF242 /* MainUI.storyboard */; };
+		94F839E11A869A90003DF242 /* DefaultActivities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F839E01A869A90003DF242 /* DefaultActivities.plist */; };
+		94F839E31A869B8A003DF242 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F839E21A869B8A003DF242 /* SetupViewController.swift */; };
+		94F839E51A869BA0003DF242 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F839E41A869BA0003DF242 /* HistoryViewController.swift */; };
+		94F839E71A869BE8003DF242 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F839E61A869BE8003DF242 /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		9488E6641A86635400F0E383 /* Relax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9488E6681A86635400F0E383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9488E6691A86635400F0E383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9488E66B1A86635400F0E383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9488E66E1A86635400F0E383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9488E66B1A86635400F0E383 /* RelaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxViewController.swift; sourceTree = "<group>"; };
 		9488E6701A86635400F0E383 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9488E6731A86635400F0E383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9488E6791A86635400F0E383 /* RelaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9488E67E1A86635400F0E383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9488E67F1A86635400F0E383 /* RelaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTests.swift; sourceTree = "<group>"; };
+		94F839DC1A8699AF003DF242 /* MainUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainUI.storyboard; sourceTree = "<group>"; };
+		94F839E01A869A90003DF242 /* DefaultActivities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultActivities.plist; sourceTree = "<group>"; };
+		94F839E21A869B8A003DF242 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		94F839E41A869BA0003DF242 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		94F839E61A869BE8003DF242 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,10 @@
 		9488E6661A86635400F0E383 /* Relax */ = {
 			isa = PBXGroup;
 			children = (
-				9488E6691A86635400F0E383 /* AppDelegate.swift */,
-				9488E66B1A86635400F0E383 /* ViewController.swift */,
-				9488E66D1A86635400F0E383 /* Main.storyboard */,
-				9488E6701A86635400F0E383 /* Images.xcassets */,
-				9488E6721A86635400F0E383 /* LaunchScreen.xib */,
+				94F839DE1A8699FD003DF242 /* Data */,
+				94F839DF1A869A1B003DF242 /* UI */,
 				9488E6671A86635400F0E383 /* Supporting Files */,
+				9488E6691A86635400F0E383 /* AppDelegate.swift */,
 			);
 			path = Relax;
 			sourceTree = "<group>";
@@ -90,6 +96,7 @@
 		9488E6671A86635400F0E383 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9488E6701A86635400F0E383 /* Images.xcassets */,
 				9488E6681A86635400F0E383 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +117,27 @@
 				9488E67E1A86635400F0E383 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94F839DE1A8699FD003DF242 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				94F839E01A869A90003DF242 /* DefaultActivities.plist */,
+				94F839E61A869BE8003DF242 /* Activity.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		94F839DF1A869A1B003DF242 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9488E66B1A86635400F0E383 /* RelaxViewController.swift */,
+				94F839E41A869BA0003DF242 /* HistoryViewController.swift */,
+				94F839E21A869B8A003DF242 /* SetupViewController.swift */,
+				94F839DC1A8699AF003DF242 /* MainUI.storyboard */,
+				9488E6721A86635400F0E383 /* LaunchScreen.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +220,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9488E66F1A86635400F0E383 /* Main.storyboard in Resources */,
 				9488E6741A86635400F0E383 /* LaunchScreen.xib in Resources */,
 				9488E6711A86635400F0E383 /* Images.xcassets in Resources */,
+				94F839DD1A8699AF003DF242 /* MainUI.storyboard in Resources */,
+				94F839E11A869A90003DF242 /* DefaultActivities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9488E66C1A86635400F0E383 /* ViewController.swift in Sources */,
+				94F839E71A869BE8003DF242 /* Activity.swift in Sources */,
+				9488E66C1A86635400F0E383 /* RelaxViewController.swift in Sources */,
 				9488E66A1A86635400F0E383 /* AppDelegate.swift in Sources */,
+				94F839E31A869B8A003DF242 /* SetupViewController.swift in Sources */,
+				94F839E51A869BA0003DF242 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9488E66D1A86635400F0E383 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9488E66E1A86635400F0E383 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9488E6721A86635400F0E383 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -407,6 +431,7 @@
 				9488E6851A86635400F0E383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9488E6861A86635400F0E383 /* Build configuration list for PBXNativeTarget "RelaxTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +440,7 @@
 				9488E6881A86635400F0E383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
