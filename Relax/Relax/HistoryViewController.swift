@@ -17,7 +17,7 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
 
         // Do any additional setup after loading the view.
 
-        // TODO: Load data
+        items = DataStore.loadHistoryItems()
     }
 
     override func didReceiveMemoryWarning() {

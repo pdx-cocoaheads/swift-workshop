@@ -12,4 +12,5 @@ struct HistoryItem {
     let activity: Activity
     let rating: Double
     let comments: String
+    let loggedAt: NSDate
 }
