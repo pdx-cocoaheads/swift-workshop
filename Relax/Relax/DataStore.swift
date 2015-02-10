@@ -30,10 +30,22 @@ class DataStore {
 
     class func addActivity(activity: Activity) {
         // TODO: Implement me!
+        assert(false, "Unimplemented")
     }
 
     class func removeActivity(activity: Activity) {
         // TODO: Implement me!
+        assert(false, "Unimplemented")
+    }
+
+    class func currentActivity() -> Activity {
+        // TODO: Implement me!
+        assert(false, "Unimplemented")
+    }
+
+    class func setCurrentActivity(activity: Activity) {
+        // TODO: Implement me!
+        assert(false, "Unimplemented")
     }
 
 
@@ -45,15 +57,18 @@ class DataStore {
 
     class func loadHistoryItems() -> [HistoryItem] {
         // TODO: Implement me!
+        assert(false, "Unimplemented")
 
         return [HistoryItem]()
     }
 
     class func addHistoryItem(item: HistoryItem) {
         // TODO: Implement me!
+        assert(false, "Unimplemented")
     }
 
     class func removeHistoryItem(item: HistoryItem) {
         // TODO: Implement me!
+        assert(false, "Unimplemented")
     }
 }
