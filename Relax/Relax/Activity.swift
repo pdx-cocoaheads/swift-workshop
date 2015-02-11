@@ -12,16 +12,3 @@ struct Activity {
     let title: String
 }
 
-class Activities {
-    class func load(path: String) -> [Activity] {
-        if let arr = NSArray(contentsOfFile: path) as? [AnyObject] {
-            return arr.map({ (t:AnyObject?) -> Activity in
-                if let title = t as? String {
-                    return Activity(title: title)
-                }
-                return Activity(title: "")
-            })
-        }
-        return [Activity]()
-    }
-}

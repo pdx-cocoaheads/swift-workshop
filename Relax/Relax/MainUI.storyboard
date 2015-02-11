@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IQk-SW-CYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="-21"/>
+            <point key="canvasLocation" x="-367" y="-351"/>
         </scene>
         <!--History-->
         <scene sceneID="hau-gN-Eku">
@@ -34,7 +34,32 @@
                     <view key="view" contentMode="scaleToFill" id="04o-zd-qM5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="B3C-HQ-whh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" id="wdT-i1-LUY" customClass="HistoryTableViewCell" customModule="Relax" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdT-i1-LUY" id="Lq3-q9-TKe">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="duF-OC-dtX" id="iqN-z2-rQk"/>
+                                    <outlet property="delegate" destination="duF-OC-dtX" id="5uX-S7-fS0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B3C-HQ-whh" firstAttribute="top" secondItem="04o-zd-qM5" secondAttribute="top" id="0HQ-St-6Hn"/>
+                            <constraint firstItem="B3C-HQ-whh" firstAttribute="leading" secondItem="04o-zd-qM5" secondAttribute="leading" id="aHa-eh-uf2"/>
+                            <constraint firstItem="3gV-kt-aug" firstAttribute="top" secondItem="B3C-HQ-whh" secondAttribute="bottom" id="hpe-FT-4T6"/>
+                            <constraint firstAttribute="trailing" secondItem="B3C-HQ-whh" secondAttribute="trailing" id="rI0-9y-FcE"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" id="Fkc-Qc-eQ0"/>
                 </viewController>
@@ -55,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;&lt; dynamic &gt;&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwb-Dg-ITJ">
-                                <rect key="frame" x="242" y="290" width="116" height="20.5"/>
+                                <rect key="frame" x="242" y="290" width="116" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,8 +89,8 @@
                                 <rect key="frame" x="157" y="489" width="300" height="54"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bta-0r-bQ7">
-                                        <rect key="frame" x="229" y="12" width="63" height="30"/>
-                                        <state key="normal" title="Let's Go!">
+                                        <rect key="frame" x="193" y="12" width="99" height="30"/>
+                                        <state key="normal" title="Sounds Good!">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -73,12 +98,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIO-4W-0de">
-                                        <rect key="frame" x="8" y="12" width="90" height="30"/>
-                                        <state key="normal" title="New Activity!">
+                                        <rect key="frame" x="8" y="12" width="78" height="30"/>
+                                        <state key="normal" title="No Thanks.">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="newActivity" destination="TCe-3z-jQX" eventType="touchUpInside" id="e5h-Sr-XCs"/>
+                                            <action selector="nextActivity" destination="TCe-3z-jQX" eventType="touchUpInside" id="zhB-0z-Aua"/>
                                         </connections>
                                     </button>
                                 </subviews>

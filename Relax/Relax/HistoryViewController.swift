@@ -8,12 +8,16 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    var items = [HistoryItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        items = DataStore.loadHistoryItems()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,5 +35,24 @@ class HistoryViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+
+    // MARK: UITableViewDataSource
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // TODO: Implement me!
+        return 1
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("historyCell", forIndexPath: indexPath) as HistoryTableViewCell
+
+        if indexPath.row < items.count {
+            let item = items[indexPath.row]
+            cell.configureWithHistoryItem(item)
+        }
+
+        return cell
+    }
 
 }

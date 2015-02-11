@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9407C5781A89633500953241 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407C5771A89633500953241 /* HistoryTableViewCell.swift */; };
+		9407C57A1A8964A200953241 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407C5791A8964A200953241 /* HistoryItem.swift */; };
+		9407C57F1A896A6400953241 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407C57E1A896A6400953241 /* DataStore.swift */; };
+		9407C5811A89701D00953241 /* HistoryItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9407C5801A89701D00953241 /* HistoryItems.plist */; };
 		9488E66A1A86635400F0E383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488E6691A86635400F0E383 /* AppDelegate.swift */; };
 		9488E66C1A86635400F0E383 /* RelaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488E66B1A86635400F0E383 /* RelaxViewController.swift */; };
 		9488E6711A86635400F0E383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9488E6701A86635400F0E383 /* Images.xcassets */; };
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9407C5771A89633500953241 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		9407C5791A8964A200953241 /* HistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		9407C57E1A896A6400953241 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		9407C5801A89701D00953241 /* HistoryItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HistoryItems.plist; sourceTree = "<group>"; };
 		9488E6641A86635400F0E383 /* Relax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9488E6681A86635400F0E383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9488E6691A86635400F0E383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +72,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9407C57B1A896A2B00953241 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				94F839E41A869BA0003DF242 /* HistoryViewController.swift */,
+				9407C5771A89633500953241 /* HistoryTableViewCell.swift */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		9407C57C1A896A3600953241 /* Relax */ = {
+			isa = PBXGroup;
+			children = (
+				9488E66B1A86635400F0E383 /* RelaxViewController.swift */,
+			);
+			name = Relax;
+			sourceTree = "<group>";
+		};
+		9407C57D1A896A4000953241 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				94F839E21A869B8A003DF242 /* SetupViewController.swift */,
+			);
+			name = Setup;
+			sourceTree = "<group>";
+		};
 		9488E65B1A86635400F0E383 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				94F839E01A869A90003DF242 /* DefaultActivities.plist */,
+				9407C5801A89701D00953241 /* HistoryItems.plist */,
 				94F839E61A869BE8003DF242 /* Activity.swift */,
+				9407C5791A8964A200953241 /* HistoryItem.swift */,
+				9407C57E1A896A6400953241 /* DataStore.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -131,9 +167,9 @@
 		94F839DF1A869A1B003DF242 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9488E66B1A86635400F0E383 /* RelaxViewController.swift */,
-				94F839E41A869BA0003DF242 /* HistoryViewController.swift */,
-				94F839E21A869B8A003DF242 /* SetupViewController.swift */,
+				9407C57C1A896A3600953241 /* Relax */,
+				9407C57B1A896A2B00953241 /* History */,
+				9407C57D1A896A4000953241 /* Setup */,
 				94F839DC1A8699AF003DF242 /* MainUI.storyboard */,
 				9488E6721A86635400F0E383 /* LaunchScreen.xib */,
 			);
@@ -222,6 +258,7 @@
 			files = (
 				9488E6741A86635400F0E383 /* LaunchScreen.xib in Resources */,
 				9488E6711A86635400F0E383 /* Images.xcassets in Resources */,
+				9407C5811A89701D00953241 /* HistoryItems.plist in Resources */,
 				94F839DD1A8699AF003DF242 /* MainUI.storyboard in Resources */,
 				94F839E11A869A90003DF242 /* DefaultActivities.plist in Resources */,
 			);
@@ -241,7 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9407C5781A89633500953241 /* HistoryTableViewCell.swift in Sources */,
+				9407C57F1A896A6400953241 /* DataStore.swift in Sources */,
 				94F839E71A869BE8003DF242 /* Activity.swift in Sources */,
+				9407C57A1A8964A200953241 /* HistoryItem.swift in Sources */,
 				9488E66C1A86635400F0E383 /* RelaxViewController.swift in Sources */,
 				9488E66A1A86635400F0E383 /* AppDelegate.swift in Sources */,
 				94F839E31A869B8A003DF242 /* SetupViewController.swift in Sources */,

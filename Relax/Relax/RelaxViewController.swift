@@ -29,8 +29,8 @@ class RelaxViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        allActivities = Activities.load(NSBundle.mainBundle().pathForResource("DefaultActivities", ofType: "plist")!)
-        newActivity()
+        allActivities = DataStore.loadActivities()
+        nextActivity()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +38,7 @@ class RelaxViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func newActivity() {
+    @IBAction func nextActivity() {
         self.currentActivityIndex = Int(arc4random_uniform(UInt32(allActivities.count)))
     }
 
