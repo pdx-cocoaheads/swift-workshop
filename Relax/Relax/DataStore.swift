@@ -30,12 +30,12 @@ class DataStore {
 
     class func addActivity(activity: Activity) {
         // TODO: Implement me!
-        assert(false, "Unimplemented")
+        println("addActivity called... but it's not implemented yet!")
     }
 
     class func removeActivity(activity: Activity) {
         // TODO: Implement me!
-        assert(false, "Unimplemented")
+        println("removeActivity called... but it's not implemented yet!")
     }
 
     class func currentActivity() -> Activity {
@@ -45,7 +45,7 @@ class DataStore {
 
     class func setCurrentActivity(activity: Activity) {
         // TODO: Implement me!
-        assert(false, "Unimplemented")
+        println("setCurrentActivity called... but it's not implemented yet!")
     }
 
 
@@ -57,18 +57,18 @@ class DataStore {
 
     class func loadHistoryItems() -> [HistoryItem] {
         // TODO: Implement me!
-        assert(false, "Unimplemented")
+        println("loadHistoryItems called... but it's not implemented yet!")
 
         return [HistoryItem]()
     }
 
     class func addHistoryItem(item: HistoryItem) {
         // TODO: Implement me!
-        assert(false, "Unimplemented")
+        println("addHistoryItem called... but it's not implemented yet!")
     }
 
     class func removeHistoryItem(item: HistoryItem) {
         // TODO: Implement me!
-        assert(false, "Unimplemented")
+        println("removeHistoryItem called... but it's not implemented yet!")
     }
 }

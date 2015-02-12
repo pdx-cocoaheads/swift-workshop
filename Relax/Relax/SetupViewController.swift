@@ -38,7 +38,7 @@ class SetupViewController: UIViewController, UITableViewDataSource, UITableViewD
     */
     @IBAction func addActivity(sender: UIBarButtonItem) {
         // TODO: Implement me!
-        println("Not Implemented.")
+        println("addActivity called... but it's not implemented yet!")
     }
 
     // MARK: UITableViewDataSource

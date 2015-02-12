@@ -23,7 +23,7 @@ class HistoryTableViewCell: UITableViewCell {
 
     func configureWithHistoryItem(item: HistoryItem) {
         // TODO: Implement me!
-        assert(false, "Unimplemented")
+        println("configureWithHistoryItem called... but it's not implemented yet!")
     }
 
 }
