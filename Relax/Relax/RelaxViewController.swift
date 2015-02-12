@@ -43,6 +43,10 @@ class RelaxViewController: UIViewController {
     }
 
     @IBAction func beginActivity() {
+        DataStore.setCurrentActivity(allActivities[currentActivityIndex])
+
+        // TODO: Implement me!
+        println( "beginActivity called... but it's not implemented yet!")
     }
 }
 
